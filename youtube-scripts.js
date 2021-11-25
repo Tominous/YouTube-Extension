@@ -168,22 +168,22 @@ ImprovedTube.init = function () {
         ImprovedTube.dim();
         ImprovedTube.font();
         ImprovedTube.themes();
-        //ImprovedTube.improvedtubeYoutubeSidebarButton();
-        //ImprovedTube.improvedtubeYoutubePlayerButtons();
+        ImprovedTube.improvedtubeYoutubeSidebarButton();
+        ImprovedTube.improvedtubeYoutubePlayerButtons();
     });
 
     window.addEventListener('yt-page-data-updated', function () {
         ImprovedTube.pageType();
         ImprovedTube.videoPageUpdate();
-        //ImprovedTube.improvedtubeYoutubeSidebarButton();
-        //ImprovedTube.improvedtubeYoutubePlayerButtons();
+        ImprovedTube.improvedtubeYoutubeSidebarButton();
+        ImprovedTube.improvedtubeYoutubePlayerButtons();
     });
 
-    /*window.addEventListener('resize', function() {
+    window.addEventListener('resize', function() {
         setTimeout(function() {
             ImprovedTube.playerSize();
         }, 100);
-    });*/
+    });
 
     this.bluelight();
     this.playerH264();
@@ -408,7 +408,7 @@ ImprovedTube.ytElementsHandler = function (node) {
         }
     } else if (name === 'A' && node.href) {
         if (id === 'logo') {
-            //ImprovedTube.youtubeHomePage();
+            ImprovedTube.youtubeHomePage();
         }
 
         ImprovedTube.channelDefaultTab(node);
